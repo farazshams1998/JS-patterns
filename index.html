@@ -21,6 +21,32 @@
     
     
     </script>
+    <h2>Example 1</h2>
+    <script>
+    
+    for(var x= 5; x >= 1; x--){
+        for(y= x ; y >=1 ;y--){
+            document.write("A" + " ")
+        }
+        document.write("<br>")
+    }
+    
+    
+    </script>
+
+     <h2>Example 1 copy</h2>
+
+     <script>
+     
+     for(var x= 1; x <= 5; x++){
+         for(y= x ; y >=1 ;y--){
+             document.write("*" + " ")
+         }
+         document.write("<br>")
+     }
+     
+     
+     </script>
 
 <h2>Example 2</h2>
 <script>
@@ -103,9 +129,65 @@ for(var x= 4; x >= 1; x--){
 
 </script>
 
+<h2>Example 6</h2>
+
+<h2>Character Pattern</h2>
+<script>
+
+
+    var ch = "";
+    var count = 65;
+
+    for (var i = 1; i <=5; i++) {
+     
+        //ch=String.fromCharCode(count)
+     
+        for (var j = i; j <= 5; j++) {
+             ch= String.fromCharCode(count);
+             count++;
+
+            document.write(ch + " ");  
+        }
+  
+        
+        document.write("<br>")
+        
+    }
+    
+
+</script>
 
 
 
+<h2>Example 7</h2>
+
+<h3>Pyramid Character Pattern</h3>
+<script>
+  
+var ch="";
+var code=65;
+
+
+for(var x= 1; x <= 5; x++){
+    ch=String.fromCharCode(code);
+    for(var z= 5;z>=x ; z--){
+        document.write("&nbsp; " + "&nbsp")
+    }
+    for(y= 1 ; y <=x-1 ;y++){
+        ch=String.fromCharCode(code);
+        code++;
+        document.write(ch + " ")
+    }
+    for(var i=1; i<=x;i++){
+        ch=String.fromCharCode(code);
+        code++;
+        document.write(ch + " ")
+    }
+    document.write("<br>")
+}
+
+
+</script>
 
 
 </body>
